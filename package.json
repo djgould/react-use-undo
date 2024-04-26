@@ -1,8 +1,12 @@
 {
-  "name": "use-undo",
+  "name": "@djgould/react-use-undo",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/djgould/react-use-undo",
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
