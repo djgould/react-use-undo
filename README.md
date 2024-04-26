@@ -1,8 +1,37 @@
-# React + Vite
+# React `useUndo`
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is an undo hook for React. It is a simple hook that allows you to undo changes to a value.
 
-Currently, two official plugins are available:
+installation:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```bash
+npm install @djgould/react-use-undo
+```
+
+usage:
+
+```jsx
+import React from "react";
+import { useUndo } from "@djgould/react-use-undo";
+
+function App() {
+  const [commands, addCommand, undo, redo] = useUndo(0);
+
+  return (
+    <div>
+      <button onClick={() => addCommand(commands[commands.length] + 1)}>
+        Increment
+      </button>
+      <button onClick={undo}>Undo</button>
+      <button onClick={redo}>Redo</button>
+      <p>last value: {commands[commands.length - 1]}</p>
+    </div>
+  );
+}
+```
+
+## Running tests
+
+```bash
+npm test
+```

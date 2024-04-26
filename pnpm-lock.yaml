@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@djgould/react-use-undo':
+    specifier: ^0.0.0
+    version: 0.0.0
   react:
     specifier: ^18.2.0
     version: 18.3.1
@@ -443,6 +446,12 @@ packages:
     dependencies:
       '@jridgewell/trace-mapping': 0.3.9
     dev: true
+
+  /@djgould/react-use-undo@0.0.0:
+    resolution: {integrity: sha512-KnkmDDEqu+Ji1o5HQeW0wNt/0GVCKcGVj0C78DysE0VHL36Vq/BBOpzEMAtJFARS+hggLXaDVJqT7z8H8M5jCQ==}
+    dependencies:
+      react: 18.3.1
+    dev: false
 
   /@esbuild/aix-ppc64@0.20.2:
     resolution: {integrity: sha512-D+EBOJHXdNZcLJRBkhENNG8Wji2kgc9AZ9KiPr1JuZjsNtyHzrsfLRrY0tk2H2aoFu6RANO1y1iPPUCDYWkb5g==}

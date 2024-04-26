@@ -1,11 +1,10 @@
 {
   "name": "@djgould/react-use-undo",
-  "private": true,
   "version": "0.0.0",
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "https://github.com/djgould/react-use-undo",
+    "url": "https://github.com/djgould/react-use-undo"
   },
   "scripts": {
     "dev": "vite",
@@ -16,6 +15,7 @@
     "test:watch": "NODE_OPTIONS=\"$NODE_OPTIONS --experimental-vm-modules\" jest --watchAll"
   },
   "dependencies": {
+    "@djgould/react-use-undo": "^0.0.0",
     "react": "^18.2.0"
   },
   "devDependencies": {
