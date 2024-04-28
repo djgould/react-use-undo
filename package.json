@@ -6,6 +6,7 @@
     "type": "git",
     "url": "https://github.com/djgould/react-use-undo"
   },
+  "entrypoint": "src/index.ts",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
